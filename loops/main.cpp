@@ -5,7 +5,7 @@ int main()
     //FOR_LOOP
 
     //METHOD_1
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < 10; i++)
     {
         std::cout << "Hello World!" << std::endl;
     }
@@ -14,7 +14,7 @@ int main()
 
     //METHOD_2
     int j = 0;
-    for ( ; j < 5; )
+    for ( ; j < 10; )
     {
         std::cout << "Hello World!" << std::endl;
         j++;
@@ -29,7 +29,7 @@ int main()
     {
         std::cout << "Hello World!" << std::endl;
         k++;
-        if (!(k < 5))
+        if (!(k < 10))
             condition = false;
     }
 
@@ -39,7 +39,7 @@ int main()
 
     //METHOD_1
     int x = 0;
-    while (x < 5)
+    while (x < 10)
     {
         std::cout << "This is a while loop" << std::endl;
         x++;
@@ -53,7 +53,7 @@ int main()
     {
         std::cout << "This is a do while loop" << std::endl; //This will run atleast one time even if the condition is false.
         y++;
-    } while (y < 5);
+    } while (y < 10);
     
     std::cin.get();
 }
