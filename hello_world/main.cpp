@@ -1,7 +1,7 @@
 #include <iostream>
-
+#define LOG(x) std::cout << x << std::endl
 int main()
 {
-    std::cout << "Hello Vaibhav" << std::endl;
+    LOG("Hello Vaibhav");
     std::cin.get();
 }
