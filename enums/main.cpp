@@ -13,7 +13,8 @@ enum Example_2 : unsigned char // You can assign a data type by this.
 
 int main()
 {
-    Example value = B;
-    
+    Example_2 value = F;
+
+    std::cout << value << std::endl;
     std::cin.get();
 }
