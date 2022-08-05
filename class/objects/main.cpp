@@ -1,3 +1,5 @@
+// Instantiating objects in C++
+
 #include <iostream>
 
 using String = std::string;
@@ -13,8 +15,24 @@ public:
     const String& GetName() const { return m_name; }
 };
 
+int* CreateArray() // This is wrong because this function returns array and the array variable cease to exist outside the function's scope.
+{
+    int array[50];
+    return array;
+}
+
+void CreateArray(int* array)
+{
+    // fill the array
+}
+
 int main()
 {
+    int array[50];
+    CreateArray(array);
+
+    int* a = CreateArray();
+
     // Instantiating objects on the stack.
 
     // The objects that are created on the stack gets destroyed once the scope of the function is ended.
