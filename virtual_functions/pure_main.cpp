@@ -1,4 +1,4 @@
-// If you want to override a functions you might want to use vitual functions.
+// If you want to override a functions you might want to use virtual functions.
 
 
 #include <iostream>

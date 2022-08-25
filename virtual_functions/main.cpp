@@ -1,4 +1,4 @@
-// If you want to override a functions you might want to use vitual functions.
+// If you want to override a functions you might want to use virtual functions.
 
 
 #include <iostream>
@@ -9,7 +9,7 @@ class Entity
 {
 public:
     virtual std::string GetName() { return "Entity"; } // Virtual functions uses dynamic dispatch (V-table).
-
+    
 };
 
 // Player class which whill inherit the public part of class Entity.
@@ -33,6 +33,8 @@ int main()
 {
     Entity* e = new Entity(); // Creating an instance of the class Entity.
     std::cout<< e->GetName() << std::endl;
+
+    printName(e);
 
     Player* p = new Player("Cherno"); // Creating an insance of class Player.
     std::cout << p->GetName() << std::endl;
