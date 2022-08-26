@@ -2,6 +2,7 @@
 #define VECTOR_H
 
 #include <iostream>
+#include <cstring>
 
 template<typename T>
 class Vector
