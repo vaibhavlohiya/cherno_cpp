@@ -11,7 +11,7 @@ int main()
 
     static_assert(data.Size() < 10, "Size is too large!!");
 
-    // making all the value of array to be 0
+    // making all the value of array to be 0 by using memset function.
     memset(data.Data(), 0, data.Size() * sizeof(int));
 
     data[0] = 2;

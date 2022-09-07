@@ -2,7 +2,6 @@
 #define VECTOR_H
 
 #include <iostream>
-#include <cstring>
 
 template<typename T>
 class Vector
@@ -17,7 +16,7 @@ public:
     void PushBack(const T& value)
     {
         if (m_size > m_Capacity)
-            ReAlloc(m_Capacity + m_Capacity / 2);
+            ReAlloc(m_Capacity + m_Capacity);
 
         m_Data[m_size] = value;
         m_size++;
