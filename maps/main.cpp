@@ -12,9 +12,9 @@ struct CityRecords
     uint64_t Population;
     double longitude, latitude;
 
-    /*CityRecords(std::string Name, uint64_t Population, double Longitude, double Latitude)
+    CityRecords(std::string Name, uint64_t Population, double Longitude, double Latitude)
         : Name(Name), Population(Population), longitude(Longitude), latitude(Latitude)
-    {}*/
+    {}
 
     // this is used for comparison of different entries of map 
     bool operator<(const CityRecords& other) const { return Population < other.Population; }
@@ -37,7 +37,7 @@ int main()
 {
     // Finding a city's population using a vector. (Remember that you need a constructor for this to work.)
 
-    /*std::vector<CityRecords> cities;
+    std::vector<CityRecords> cities;
 
     cities.emplace_back("New Delhi", 17000000, 2.3, 7.9);
     cities.emplace_back("Mumbai", 25000000, 2.3, 7.9);
@@ -51,7 +51,7 @@ int main()
         {
             std::cout << "population of Kolkata: " << city.Population << std::endl;
         }
-    }*/
+    }
 
     // Finding a city's population using a map. (map takes in a key and a value)
 
