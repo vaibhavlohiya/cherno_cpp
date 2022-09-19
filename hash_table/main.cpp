@@ -42,7 +42,7 @@ void HashTable::InsertItem(int key, std::string value)
     int HashValue = HashFunction(key);
     auto& cell = table[HashValue];
     bool KeyExists = false;
-    for (auto kv : cell)
+    for (auto& kv : cell)
     {
         if (kv.first == key)
         {

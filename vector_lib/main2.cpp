@@ -32,5 +32,8 @@ int main()
     vertices.emplace_back(4, 5, 6);
     vertices.emplace_back(7, 8, 9);
 
+    for (const Vertex& v : vertices)
+        std::cout << v << std::endl;
+
     std::cin.get();
 }
